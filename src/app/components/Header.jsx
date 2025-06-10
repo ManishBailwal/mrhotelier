@@ -7,7 +7,7 @@ import { Menu, X } from 'lucide-react'; // Optional: If using Lucide for icons
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = ['Home', 'Solutions', 'About', 'Contact'];
+  const navLinks = ['Home', 'Solutions', 'About', "Careers", 'Contact'];
 
   return (
     <header className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-sm shadow-md">
