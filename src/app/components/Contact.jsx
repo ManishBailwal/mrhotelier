@@ -30,7 +30,7 @@ export default function Contact() {
             </li>
             <li className="flex items-center space-x-3">
               <MapPin className="text-[#C8A76D]" size={20} />
-              <span>New Delhi, India</span>
+              <span>Dehradun, India</span>
             </li>
           </ul>
         </motion.div>
