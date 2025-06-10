@@ -22,11 +22,11 @@ export default function Contact() {
           <ul className="space-y-4 text-gray-400 text-sm">
             <li className="flex items-center space-x-3">
               <Mail className="text-[#C8A76D]" size={20} />
-              <span>info@mrhotelier.com</span>
+              <span>mr.hotelier2025@gmail.com</span>
             </li>
             <li className="flex items-center space-x-3">
               <Phone className="text-[#C8A76D]" size={20} />
-              <span>+91 98765 43210</span>
+              <span>+91 7252045269</span>
             </li>
             <li className="flex items-center space-x-3">
               <MapPin className="text-[#C8A76D]" size={20} />
