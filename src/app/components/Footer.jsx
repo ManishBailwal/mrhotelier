@@ -39,8 +39,8 @@ export default function Footer() {
         {/* Contact Column */}
         <div>
           <h4 className="text-white font-medium mb-3">Get in Touch</h4>
-          <p>Email: <a href="mailto:info@mrhotelier.com" className="hover:text-[#C8A76D]">info@mrhotelier.com</a></p>
-          <p>Phone: +91 98765 43210</p>
+          <p>Email: <a href="mailto:info@mrhotelier.com" className="hover:text-[#C8A76D]">mr.hotelier2025@gmail.com</a></p>
+          <p>Phone: +91 72520 45269</p>
           <div className="flex space-x-4 mt-4">
             <a href="#"><Facebook size={20} className="hover:text-[#C8A76D]" /></a>
             <a href="#"><Instagram size={20} className="hover:text-[#C8A76D]" /></a>
