@@ -31,7 +31,7 @@ export default function Hero() {
           transition={{ delay: 0.3, duration: 1 }}
           className="text-4xl md:text-6xl font-serif text-[#C8A76D] tracking-wide"
         >
-          Smart Hospitality.<br />Sustainable Business.
+          Empowering Hoteliers.<br />Elevating Hospitality.
         </motion.h1>
 
         {/* Subtext */}
@@ -53,12 +53,14 @@ export default function Hero() {
           className="mt-10"
         >
           <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-[#C8A76D] hover:bg-[#b48b51] text-black font-medium py-3 px-6 rounded-xl text-lg shadow-lg transition duration-300"
-          >
-            Discover More
-          </motion.button>
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  onClick={() => window.location.href = 'https://www.instagram.com/mrhotelier007/'}
+  className="bg-[#C8A76D] hover:bg-[#b48b51] text-black cursor-pointer font-medium py-3 px-6 rounded-xl text-lg shadow-lg transition duration-300"
+>
+  Discover More
+</motion.button>
+
         </motion.div>
       </div>
     </section>
