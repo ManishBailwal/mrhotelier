@@ -60,7 +60,7 @@ export default function Header() {
               {navLinks.map((link) => (
                 <li key={link}>
                   <a
-                    href={`#${link.toLowerCase()}`}
+                    href={`/${link.toLowerCase()}`}
                     className="block text-lg hover:text-[#C8A76D] transition-colors duration-300"
                     onClick={() => setIsOpen(false)}
                   >
