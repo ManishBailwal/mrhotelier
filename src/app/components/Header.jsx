@@ -7,14 +7,14 @@ import { Menu, X } from 'lucide-react'; // Optional: If using Lucide for icons
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = ['Home', 'Solutions', 'About', "Careers", 'Contact'];
+  const navLinks = ['Home','About', "Careers", 'Contact'];
 
   return (
     <header className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-sm shadow-md">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src="/assets/mrHotelierHeroImage.png" alt="Logo" className="h-10 w-auto" />
+          <img src="/assets/logo.jpg" alt="Logo" className="h-16 w-auto" />
           <span className="text-[#C8A76D] text-xl font-serif hidden sm:inline">Mr. Hotelier</span>
         </div>
 

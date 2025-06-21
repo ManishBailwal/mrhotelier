@@ -5,13 +5,19 @@ import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
 export default function Footer() {
   return (
     <footer className="bg-black text-gray-300 pt-16 pb-8 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-sm text-center md:text-left items-center md:items-start">
 
         {/* Brand Column */}
         <div>
-          <img src="/assets/mrHotelierHeroImage.png" alt="Logo" className="h-12 mb-4" />
+          <img
+            src="/assets/mrHotelierHeroImage.png"
+            alt="Logo"
+            className="h-12 mb-4 mx-auto md:mx-0"
+          />
           <p className="text-[#C8A76D] font-serif text-lg mb-2">Mr. Hotelier</p>
-          <p>Smart solutions for modern hospitality, built to grow your business sustainably.</p>
+          <p>
+            Smart solutions for modern hospitality, built to grow your business sustainably.
+          </p>
         </div>
 
         {/* Links Column */}
@@ -39,9 +45,9 @@ export default function Footer() {
         {/* Contact Column */}
         <div>
           <h4 className="text-white font-medium mb-3">Get in Touch</h4>
-          <p>Email: <a href="mailto:info@mrhotelier.com" className="hover:text-[#C8A76D]">mr.hotelier2025@gmail.com</a></p>
+          <p>Email: <a href="mailto:mr.hotelier2025@gmail.com" className="hover:text-[#C8A76D]">mr.hotelier2025@gmail.com</a></p>
           <p>Phone: +91 72520 45269</p>
-          <div className="flex space-x-4 mt-4">
+          <div className="flex justify-center md:justify-start space-x-4 mt-4">
             <a href="#"><Facebook size={20} className="hover:text-[#C8A76D]" /></a>
             <a href="#"><Instagram size={20} className="hover:text-[#C8A76D]" /></a>
             <a href="#"><Twitter size={20} className="hover:text-[#C8A76D]" /></a>
