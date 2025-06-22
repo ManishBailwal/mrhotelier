@@ -10,7 +10,7 @@ export default function Footer() {
         {/* Brand Column */}
         <div>
           <img
-            src="/assets/mrHotelierHeroImage.png"
+            src="/assets/logo.jpg"
             alt="Logo"
             className="h-12 mb-4 mx-auto md:mx-0"
           />
@@ -24,10 +24,10 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-medium mb-3">Quick Links</h4>
           <ul className="space-y-2">
-            <li><a href="#home" className="hover:text-[#C8A76D] transition">Home</a></li>
-            <li><a href="#solutions" className="hover:text-[#C8A76D] transition">Solutions</a></li>
-            <li><a href="#about" className="hover:text-[#C8A76D] transition">About</a></li>
-            <li><a href="#contact" className="hover:text-[#C8A76D] transition">Contact</a></li>
+            <li><a href="/home" className="hover:text-[#C8A76D] transition">Home</a></li>
+            <li><a href="/services" className="hover:text-[#C8A76D] transition">Services</a></li>
+            <li><a href="/about" className="hover:text-[#C8A76D] transition">About</a></li>
+            <li><a href="/contact" className="hover:text-[#C8A76D] transition">Contact</a></li>
           </ul>
         </div>
 
@@ -48,10 +48,36 @@ export default function Footer() {
           <p>Email: <a href="mailto:mr.hotelier2025@gmail.com" className="hover:text-[#C8A76D]">mr.hotelier2025@gmail.com</a></p>
           <p>Phone: +91 72520 45269</p>
           <div className="flex justify-center md:justify-start space-x-4 mt-4">
-            <a href="#"><Facebook size={20} className="hover:text-[#C8A76D]" /></a>
-            <a href="#"><Instagram size={20} className="hover:text-[#C8A76D]" /></a>
-            <a href="#"><Twitter size={20} className="hover:text-[#C8A76D]" /></a>
-            <a href="#"><Linkedin size={20} className="hover:text-[#C8A76D]" /></a>
+            <a
+              href="https://www.facebook.com/kumar.udit.1650"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <Facebook size={20} className="hover:text-[#C8A76D]" />
+            </a>
+            <a
+              href="https://www.instagram.com/mrhotelier007/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <Instagram size={20} className="hover:text-[#C8A76D]" />
+            </a>
+            <a
+              href="#"
+              aria-label="Twitter"
+            >
+              <Twitter size={20} className="hover:text-[#C8A76D]" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mr-hotelier-811809363/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={20} className="hover:text-[#C8A76D]" />
+            </a>
           </div>
         </div>
       </div>

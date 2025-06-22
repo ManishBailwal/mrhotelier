@@ -1,13 +1,20 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react'; // Optional: If using Lucide for icons
+import { Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
 
-  const navLinks = ['Home','About', "Careers", 'Contact'];
+  const navLinks = ['Home', 'About', 'Services', 'Careers', 'Contact'];
+
+  const handleDemoClick = () => {
+    router.push('/contact');
+    setIsOpen(false); // Closes the mobile menu if open
+  };
 
   return (
     <header className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-sm shadow-md">
@@ -23,13 +30,16 @@ export default function Header() {
           {navLinks.map((link) => (
             <a
               key={link}
-              href={`${link.toLowerCase()}`}
+              href={`/${link.toLowerCase()}`}
               className="hover:text-[#C8A76D] transition-colors duration-300"
             >
               {link}
             </a>
           ))}
-          <button className="ml-6 bg-[#C8A76D] hover:bg-[#b48b51] text-black font-medium py-2 px-4 rounded-lg text-sm transition">
+          <button
+            onClick={handleDemoClick}
+            className="ml-6 bg-[#C8A76D] hover:bg-[#b48b51] text-black font-medium py-2 px-4 rounded-lg text-sm transition"
+          >
             Book a Demo
           </button>
         </nav>
@@ -69,7 +79,10 @@ export default function Header() {
                 </li>
               ))}
               <li>
-                <button className="mt-4 w-full bg-[#C8A76D] hover:bg-[#b48b51] text-black py-2 px-4 rounded-lg text-sm font-medium transition">
+                <button
+                  onClick={handleDemoClick}
+                  className="mt-4 w-full cursor-pointer bg-[#C8A76D] hover:bg-[#b48b51] text-black py-2 px-4 rounded-lg text-sm font-medium transition"
+                >
                   Book a Demo
                 </button>
               </li>

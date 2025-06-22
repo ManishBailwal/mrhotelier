@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-3xl mx-auto text-white">
         
-        {/* Logo */}
+        {/* Logo
         <motion.img
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -22,7 +22,7 @@ export default function Hero() {
           src="/assets/mrHotelierHeroImage.png"
           alt="Mr. Hotelier Logo"
           className="mx-auto w-80 mb-6"
-        />
+        /> */}
 
         {/* Title */}
         <motion.h1

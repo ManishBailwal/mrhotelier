@@ -60,7 +60,7 @@ export default function Services() {
     <section className="bg-black text-white py-20 px-6 md:px-20 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black z-0" />
 
-      <div className="relative z-10 max-w-7xl mx-auto text-center">
+      <div className="relative mt-8 z-10 max-w-7xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

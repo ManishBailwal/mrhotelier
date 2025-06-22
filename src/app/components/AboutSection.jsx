@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const timelineData = [
@@ -88,8 +89,14 @@ function FAQItem({ faq, isOpen, onToggle }) {
 
 export default function AboutSection() {
   const [openIndex, setOpenIndex] = useState(null);
+  const router = useRouter();
+
   const toggleIndex = (index) =>
     setOpenIndex(openIndex === index ? null : index);
+
+  const handleContactClick = () => {
+    router.push('/contact');
+  };
 
   return (
     <section
@@ -227,14 +234,13 @@ export default function AboutSection() {
           <h3 className="text-center text-2xl md:text-3xl font-semibold text-[#C8A76D] mb-10">
             Frequently Asked Questions
           </h3>
-          <div className="space-y-4 ">
+          <div className="space-y-4">
             {faqs.map((faq, index) => (
               <FAQItem
                 key={index}
                 faq={faq}
                 isOpen={openIndex === index}
                 onToggle={() => toggleIndex(index)}
-                
               />
             ))}
           </div>
@@ -251,7 +257,10 @@ export default function AboutSection() {
           <h4 className="text-xl text-[#C8A76D] mb-4">
             Ready to elevate your hospitality team?
           </h4>
-          <button className="bg-[#C8A76D] cursor-pointer text-black px-8 py-3 rounded-full font-semibold shadow-md hover:opacity-90 transition">
+          <button
+            onClick={handleContactClick}
+            className="bg-[#C8A76D] cursor-pointer text-black px-8 py-3 rounded-full font-semibold shadow-md hover:opacity-90 transition"
+          >
             Contact Mr. Hotelier
           </button>
         </motion.div>
