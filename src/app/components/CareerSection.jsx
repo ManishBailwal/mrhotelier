@@ -21,7 +21,7 @@ export default function CareerSection() {
   };
 
   return (
-    <section className="relative bg-zinc-900 py-20 px-6 sm:px-10 lg:px-20 min-h-screen flex items-center justify-center">
+    <section className="relative mt-8 bg-zinc-900 py-20 px-6 sm:px-10 lg:px-20 min-h-screen flex items-center justify-center">
       <motion.div
         className="max-w-5xl w-full h-full flex flex-col items-center justify-center text-center text-white"
         variants={containerVariants}
