@@ -54,6 +54,16 @@ export default function Services() {
         'Interior & branding assistance',
       ],
     },
+    {
+      icon: '📊',
+      title: 'Sales & Marketing',
+      items: [
+        'Sales and marketing strategy implementation',
+        'Dedicated reservation desk setup and operations',
+        'Dynamic and data-driven revenue management',
+        'Active presence in Delhi, Bombay, and Gujarat',
+      ],
+    },
   ];
 
   return (
