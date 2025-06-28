@@ -35,10 +35,10 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-medium mb-3">Services</h4>
           <ul className="space-y-2">
-            <li>Cloud PMS</li>
-            <li>Channel Manager</li>
-            <li>Booking Engine</li>
-            <li>Revenue Insights</li>
+            <li>Training & Development</li>
+            <li>Start-Up Support</li>
+            <li>Placements & Hiring</li>
+            <li>Sales & Marketing</li>
           </ul>
         </div>
 

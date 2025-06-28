@@ -18,7 +18,7 @@ const timelineData = [
   {
     year: '2017',
     title: 'GM at Basque, PAS Hospitality',
-    description: 'Led a team of 60 at a 350-cover fine-dining restaurant in Bangalore.',
+    description: 'Led a team of 60 at a 350-cover fine-dining restaurant in Dehradun.',
   },
   {
     year: '2023',
