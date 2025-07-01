@@ -46,7 +46,7 @@ const faqs = [
   {
     question: "Are the training modules customizable?",
     answer:
-      "Yes, every module is designed according to the specific needs, team size, and service level of the client’s property.",
+      "Yes, every module is designed according to the specific needs, team size, and service level of the client’s property..",
   },
 ];
 
